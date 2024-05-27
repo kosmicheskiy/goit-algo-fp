@@ -17,8 +17,10 @@ def main():
     turtle.up()
     turtle.backward(200)
     turtle.down()
-    draw_pifagor_tree(150, 7)  # Початкова довжина гілки та рівень рекурсії
+    
+    level = int(input("Введіть рівень рекурсії: "))  # Користувач вводить рівень рекурсії
+    draw_pifagor_tree(150, level)  # Початкова довжина гілки та вказаний користувачем рівень рекурсії
+    
     turtle.done()
-
 
 main()
